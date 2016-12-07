@@ -11,6 +11,8 @@
   Creation Date:  December 2016
 #>
 
+#Connect to Exchange remotely, or run this on your exchange server. 
+
 # Get all the distribution groups in Exchange
 $distGroups = (Get-DistributionGroup -ResultSize unlimited | Select-Object alias, name)
 $dynDistGroups = (Get-DynamicDistributionGroup | Select-Object alias,name)
